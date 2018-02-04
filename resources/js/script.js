@@ -99,4 +99,22 @@ $(".js--nav-icon").click(function(){
 
 });
 
+// Mobile navigation
+
+var map = new GMaps({
+  div: ".map",
+  lat: 51.5044734,
+  lng: -0.1126352,
+  zoom: 14
+});
+
+map.addMarker({
+  lat: 51.5044734,
+  lng: -0.1926352,
+  title: "London",
+  infoWindow: {
+      content: "<p>Omnifood London</p>"
+  }
+});
+
 });
